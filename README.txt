@@ -1,3 +1,0 @@
-1，blockchain_node和producer_node是基于springboot、使用maven进行工程管理的java应用程序，在powershell下使用 mvn package '-Dmaven.test.skip=true' 命令进行编译打包，生成相应的.jar文件；
-2，ConsumerClient和ProducerClient是eclipse环境下创建的JavaFX工程，可直接导出相应的.jar文件；
-3.blockchain_node为区块链一般节点，producer_node为区块链验证节点，ConsumerClient为消费者客户端，ProducerClient为生产者客户端。
