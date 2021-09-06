@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CtrlClient">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="393.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab_uploading" onSelectionChanged="#tab_uploading_sel" text="上传商品">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="21.0" text="商品码" />
+                        <TextField fx:id="txt_id" layoutX="207.0" layoutY="16.0" prefHeight="30.0" prefWidth="229.0" />
+                        <TextField fx:id="txt_publickey" layoutX="208.0" layoutY="59.0" prefHeight="30.0" prefWidth="228.0" />
+                        <Label layoutX="106.0" layoutY="64.0" text="IC卡公钥" />
+                        <Label layoutX="106.0" layoutY="113.0" text="商品名称" />
+                        <TextField fx:id="txt_name" layoutX="211.0" layoutY="108.0" prefHeight="30.0" prefWidth="227.0" />
+                        <Label layoutX="106.0" layoutY="158.0" text="生产厂商" />
+                        <TextField fx:id="txt_factory" layoutX="210.0" layoutY="153.0" prefHeight="30.0" prefWidth="230.0" />
+                        <Label layoutX="106.0" layoutY="203.0" text="生产日期" />
+                        <TextField fx:id="txt_size" layoutX="212.0" layoutY="243.0" prefHeight="30.0" prefWidth="226.0" />
+                        <Label layoutX="106.0" layoutY="248.0" text="商品大小" />
+                        <Button fx:id="btn_ok" layoutX="83.0" layoutY="304.0" mnemonicParsing="false" onAction="#btn_ok_clicked" text="上传" />
+                        <Button fx:id="btn_clr" layoutX="200.0" layoutY="304.0" mnemonicParsing="false" onAction="#btn_clr_clicked" text="清空" />
+                        <Button fx:id="btn_logout" layoutX="327.0" layoutY="304.0" mnemonicParsing="false" onAction="#btn_logout_clicked" text="注销" />
+                        <Button fx:id="btn_exit" layoutX="449.0" layoutY="304.0" mnemonicParsing="false" onAction="#btn_exit_clicked" text="退出" />
+                        <DatePicker fx:id="datepicker" layoutX="208.0" layoutY="198.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab_uploaded" onSelectionChanged="#tab_uploaded_sel" text="已上传商品">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_uploaded" prefHeight="359.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="col_id" prefWidth="96.0" text="商品码" />
+                            <TableColumn fx:id="col_publickey" prefWidth="99.0" text="IC卡公钥" />
+                              <TableColumn fx:id="col_name" prefWidth="104.0" text="商品名称" />
+                              <TableColumn fx:id="col_factory" prefWidth="101.0" text="生产厂商" />
+                              <TableColumn fx:id="col_time" prefWidth="101.0" text="生产日期" />
+                              <TableColumn fx:id="col_size" prefWidth="96.0" text="商品大小" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

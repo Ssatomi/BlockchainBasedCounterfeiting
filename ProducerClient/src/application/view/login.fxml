@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CtrlLogin">
+   <children>
+      <Button layoutX="127.0" layoutY="258.0" mnemonicParsing="false" onAction="#btn_login_clicked" prefHeight="44.0" prefWidth="319.0" text="登录" />
+      <Label layoutX="126.0" layoutY="89.0" prefHeight="36.0" prefWidth="98.0" text="账号" />
+      <Label layoutX="126.0" layoutY="173.0" prefHeight="36.0" prefWidth="98.0" text="密码" />
+      <TextField fx:id="txt_account" layoutX="217.0" layoutY="87.0" prefHeight="36.0" prefWidth="226.0" />
+      <PasswordField fx:id="txt_pswd" layoutX="217.0" layoutY="173.0" prefHeight="36.0" prefWidth="226.0" />
+   </children>
+</Pane>
