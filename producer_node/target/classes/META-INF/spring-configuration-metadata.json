@@ -1,0 +1,98 @@
+{
+  "groups": [
+    {
+      "name": "block",
+      "type": "com.dce.blockchain.web.util.BlockCache",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    }
+  ],
+  "properties": [
+    {
+      "name": "block.address",
+      "type": "java.lang.String",
+      "description": "要连接的节点地址",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.address-2",
+      "type": "java.lang.String",
+      "description": "要连接的节点地址_2",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.address-3",
+      "type": "java.lang.String",
+      "description": "要连接的节点地址_3",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.block-chain-cache",
+      "type": "java.util.List<com.dce.blockchain.web.model.Block>",
+      "description": "区块链缓存",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.client-sockets-list",
+      "type": "java.util.List<org.java_websocket.WebSocket>",
+      "description": "当前producer的客户端的socket对象",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.index-for-block-cache",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "商品码与区块位置的索引缓存",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.is-ready",
+      "type": "java.lang.Boolean",
+      "description": "所有节点是否已准备标志",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache",
+      "defaultValue": false
+    },
+    {
+      "name": "block.new-sockets-list-cache",
+      "type": "java.util.List<org.java_websocket.WebSocket>",
+      "description": "新节点socket列表缓存",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.original-text",
+      "type": "java.lang.String",
+      "description": "正在验证的商品的数字签名原文",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.p2pport",
+      "type": "java.lang.Integer",
+      "description": "当前节点p2pserver端口号",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache",
+      "defaultValue": 0
+    },
+    {
+      "name": "block.public-key",
+      "type": "java.lang.String",
+      "description": "producer的公钥",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.sockets-list",
+      "type": "java.util.List<org.java_websocket.WebSocket>",
+      "description": "当前producer的节点的socket对象",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.successed-commodities",
+      "type": "java.util.List<com.dce.blockchain.web.model.Transaction>",
+      "description": "已成功上链的商品列表",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.verifying-commodity",
+      "type": "com.dce.blockchain.web.model.Transaction",
+      "description": "正在验证的商品的缓存",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,66 @@
+{
+  "groups": [
+    {
+      "name": "block",
+      "type": "com.dce.blockchain.web.util.BlockCache",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    }
+  ],
+  "properties": [
+    {
+      "name": "block.address",
+      "type": "java.lang.String",
+      "description": "要连接的节点地址",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.address-2",
+      "type": "java.lang.String",
+      "description": "要连接的节点地址_2",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.block-chain",
+      "type": "java.util.List<com.dce.blockchain.web.model.Block>",
+      "description": "当前节点的区块链结构",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.decided-new-block-cache",
+      "type": "com.dce.blockchain.web.model.Block",
+      "description": "新区块共识结果缓存",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.difficulty",
+      "type": "java.lang.Integer",
+      "description": "挖矿的难度系数",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.index-for-block",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "description": "商品码查询区块链中对应区块的索引",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.new-block-deciding",
+      "type": "com.dce.blockchain.web.model.Block",
+      "description": "正在共识的新区块缓存",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.p2pport",
+      "type": "java.lang.Integer",
+      "description": "当前节点p2pserver端口号",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    },
+    {
+      "name": "block.sockets-list",
+      "type": "java.util.List<org.java_websocket.WebSocket>",
+      "description": "当前节点的socket对象",
+      "sourceType": "com.dce.blockchain.web.util.BlockCache"
+    }
+  ],
+  "hints": []
+}
