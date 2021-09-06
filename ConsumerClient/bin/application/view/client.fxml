@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CtrlClient">
+   <children>
+      <Button fx:id="btn_verify" layoutX="201.0" layoutY="337.0" mnemonicParsing="false" onAction="#btn_verify_clicked" prefHeight="30.0" prefWidth="62.0" text="验证" />
+      <Button fx:id="btn_doc" layoutX="75.0" layoutY="337.0" mnemonicParsing="false" onAction="#btn_doc_clicked" text="操作说明" />
+      <Button fx:id="btn_clr" layoutX="319.0" layoutY="337.0" mnemonicParsing="false" onAction="#btn_clr_clicked" prefHeight="30.0" prefWidth="62.0" text="清空" />
+      <Button fx:id="btn_exit" layoutX="445.0" layoutY="337.0" mnemonicParsing="false" onAction="#btn_exit_clicked" prefHeight="30.0" prefWidth="62.0" text="退出" />
+      <Label layoutX="136.0" layoutY="20.0" text="商品码" />
+      <TextField fx:id="txt_id" layoutX="221.0" layoutY="15.0" prefHeight="30.0" prefWidth="236.0" />
+      <TextField fx:id="txt_publickey" layoutX="221.0" layoutY="56.0" prefHeight="30.0" prefWidth="236.0" />
+      <Label layoutX="123.0" layoutY="61.0" prefHeight="20.0" prefWidth="72.0" text="IC卡公钥" />
+      <TextField fx:id="txt_name" layoutX="221.0" layoutY="96.0" prefHeight="30.0" prefWidth="236.0" />
+      <Label layoutX="128.0" layoutY="101.0" text="商品名称" />
+      <Label layoutX="128.0" layoutY="142.0" text="生产厂商" />
+      <TextField fx:id="txt_factory" layoutX="221.0" layoutY="137.0" prefHeight="30.0" prefWidth="236.0" />
+      <Label layoutX="128.0" layoutY="183.0" text="生产日期" />
+      <TextField fx:id="txt_time" layoutX="221.0" layoutY="178.0" prefHeight="30.0" prefWidth="236.0" />
+      <TextField fx:id="txt_size" layoutX="221.0" layoutY="221.0" prefHeight="30.0" prefWidth="236.0" />
+      <Label layoutX="128.0" layoutY="226.0" text="商品大小" />
+      <TextField fx:id="txt_orig_text" layoutX="221.0" layoutY="258.0" prefHeight="30.0" prefWidth="236.0" />
+      <Label layoutX="128.0" layoutY="263.0" text="验证原文" />
+      <Label layoutX="128.0" layoutY="301.0" text="验证密文" />
+      <TextField fx:id="txt_encr_text" layoutX="221.0" layoutY="296.0" prefHeight="30.0" prefWidth="236.0" />
+   </children>
+</Pane>
